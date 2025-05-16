@@ -8,15 +8,33 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.11,<4.0"
 dependencies = [
+    "langgraph (>=0.4.3,<0.5.0)",
+    "langsmith (>=0.3.42,<0.4.0)",
+    "langchain[vertexai] (>=0.3.25,<0.4.0)",
+    "langchain-google-vertexai (>=2.0.23,<2.1.0)",
+    "pydantic-settings (>=2.9.1,<2.10.0)",
+    "pandas (>=2.2.3,<2.3.0)",
+    "langgraph-cli[inmem] (>=0.2.10,<0.3.0)"
 ]
 
 [tool.poetry]
 package-mode = false
 
+[tool.ruff]
+line-length = 79
+
+[tool.ruff.format]
+docstring-code-format = true
+
 [tool.poetry.group.dev.dependencies]
 pylint = "^3.3.6"
 pytest = "^8.3.5"
 pytest-asyncio = "^0.26.0"
+ipython = "^9.2.0"
+jupyterlab = "^4.4.2"
+pygraphviz = "^1.14"
+black = "^25.1.0"
+ruff = "^0.11.10"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
