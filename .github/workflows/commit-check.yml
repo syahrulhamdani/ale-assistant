@@ -26,4 +26,5 @@ jobs:
           author-email: true
           merge-base: false
           job-summary: true
+          commit-signoff: false
           pr-comments: ${{ github.event_name == 'pull_request' }}
