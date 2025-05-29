@@ -19,7 +19,7 @@ def tool_generate_resume(data: ResumeData) -> dict[str, str]:
     Args:
         data (ResumeData): Content of the resume.
     """
-    url = f"{service.url}/v1/resume/generate"
+    url = f"{service.url}/sylab/api/v1/resume/generate"
 
     try:
         response = service.session.post(
