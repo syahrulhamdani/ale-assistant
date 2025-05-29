@@ -35,6 +35,7 @@ jupyterlab = "^4.4.2"
 pygraphviz = "^1.14"
 black = "^25.1.0"
 ruff = "^0.11.10"
+loguru = "^0.7.3"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
