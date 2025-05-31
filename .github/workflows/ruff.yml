@@ -3,7 +3,9 @@ name: Run Ruff
 on:
   push:
     branches:
-      - '!main'
+      - 'feature/**'
+      - 'bugfix/**'
+      - 'hotfix/**'
 
 jobs:
   ruff_check:
