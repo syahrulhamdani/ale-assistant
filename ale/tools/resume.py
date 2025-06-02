@@ -4,9 +4,9 @@ import logging
 from langchain_core.tools import tool
 from requests.exceptions import HTTPError, RequestException
 
-from app.core.config import config as c
-from app.models.resume import ResumeData
-from app.services.tools import BasicServices
+from ale.core.config import config as c
+from ale.models.resume import ResumeData
+from ale.tools import BasicServices
 
 _LOGGER = logging.getLogger(__name__)
 service = BasicServices(c.RESUME_GENERATOR_URL)

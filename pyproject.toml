@@ -18,7 +18,9 @@ dependencies = [
 ]
 
 [tool.poetry]
-package-mode = false
+packages = [
+    { include = "ale" },
+]
 
 [tool.ruff]
 line-length = 79

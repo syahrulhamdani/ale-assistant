@@ -1,7 +1,7 @@
 from langchain_google_vertexai import ChatVertexAI
 
-from app.core.config import config as c
-from app.services.agents.resume import ResumeAgent
+from ale.core.config import config as c
+from ale.agents.resume import ResumeAgent
 
 
 def create_resume_agent():
