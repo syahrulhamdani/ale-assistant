@@ -1,7 +1,7 @@
 {
 	"dependencies": ["."],
 	"graphs": {
-		"resume_agent": "./app/services/agents/__init__.py:resume_agent"
+		"resume_agent": "./ale/agents/__init__.py:resume_agent"
 	},
 	"env": ".env",
 	"python_version": "3.12"
