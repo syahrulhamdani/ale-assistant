@@ -6,7 +6,7 @@ from langgraph.graph import StateGraph, START, END, MessagesState
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode
 
-from app.services.tools import multiply
+from ale.tools import multiply
 
 
 class State(MessagesState):

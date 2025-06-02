@@ -33,6 +33,8 @@ class LLMConfig(BaseSettings):
 
 
 class Settings(LLMConfig):
+    ENV: str = os.getenv("ENV", "dev")
+
     RESUME_API_PREFIX: str = os.getenv("RESUME_API_PREFIX", "/sylab/api/v1")
     RESUME_GENERATOR_URL: str = os.getenv("RESUME_GENERATOR_URL")
     RESUME_DOWNLOAD_PATH: str = os.getenv(

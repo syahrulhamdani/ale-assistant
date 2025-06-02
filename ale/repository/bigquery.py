@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from google.cloud import bigquery
 from pandas import DataFrame
 
-from app.core.config import config as c
+from ale.core.config import config as c
 
 
 @dataclass
